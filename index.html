@@ -3,73 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Real Estate - Anna Kahn Team</title>
+    <title>Anna Kahn Team - Luxury Real Estate</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .header {
-            background-color: gold;
-            padding: 20px;
-            text-align: center;
-        }
-        .team {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .team-member {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .properties {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .property {
-            border: 1px solid #000;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .contact {
-            text-align: center;
-            margin: 20px 0;
-        }
+        body {font-family: Arial, sans-serif; background-color: #ffffff; color: #000; margin: 0; padding: 0;}
+        .hero {background: gold; padding: 50px; text-align: center;}
+        .hero h1 {font-size: 3em; color: black;}
+        .cta {margin-top: 20px;}
+        .cta button {background: black; color: white; border: none; padding: 15px 30px; font-size: 1em; cursor: pointer;}
+        .feature-properties, .team-members {padding: 20px;}
+        .property, .team-member {margin: 20px; border: 1px solid #ccc; padding: 10px; display: inline-block; width: 30%;}
+        .property img, .team-member img {max-width: 100%; height: auto;}
+        footer {text-align: center; padding: 20px; background: black; color: white;}
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to the Anna Kahn Team NYC Real Estate</h1>
-    </div>
-    <div class="team">
-        <div class="team-member">Anna Kahn</div>
-        <div class="team-member">Kevin Cahill</div>
-        <div class="team-member">Jessica Prieto</div>
-        <div class="team-member">Kierstin Vermeulen</div>
-        <div class="team-member">Rachel Lieberman</div>
-    </div>
-    <div class="properties">
-        <div class="property">
-            <h2>160 West 86th Street 10B</h2>
-        </div>
-        <div class="property">
-            <h2>310 West 86th Street 11B</h2>
-        </div>
-        <div class="property">
-            <h2>210 East 15th Street 2D</h2>
+    <div class="hero">
+        <h1>Welcome to Anna Kahn Team</h1>
+        <div class="cta">
+            <button onclick="window.location='mailto:info@annakahnteam.com'">Email Us</button>
+            <button onclick="window.location='tel:+1234567890'">Call Us</button>
         </div>
     </div>
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:kcahill@bhsusa.com">kcahill@bhsusa.com</a></p>
-        <p>Phone: 917-843-8038</p>
+
+    <div class="feature-properties">
+        <h2>Featured Properties</h2>
+        <div class="property">
+            <img src="property1.jpg" alt="Property 1">
+            <h3>Luxury Villa</h3>
+            <p>Located in the heart of the city.</p>
+            <a href="link-to-property1">View Details</a>
+        </div>
+        <div class="property">
+            <img src="property2.jpg" alt="Property 2">
+            <h3>Modern Apartment</h3>
+            <p>Experience comfort and style.</p>
+            <a href="link-to-property2">View Details</a>
+        </div>
+        <div class="property">
+            <img src="property3.jpg" alt="Property 3">
+            <h3>Cozy Cottage</h3>
+            <p>Perfect for families.</p>
+            <a href="link-to-property3">View Details</a>
+        </div>
     </div>
+
+    <div class="team-members">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h3>Anna Kahn</h3>
+            <p>Founder &amp; CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member2.jpg" alt="Team Member 2">
+            <h3>Advisor</h3>
+            <p>Real Estate Expert</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member3.jpg" alt="Team Member 3">
+            <h3>Broker</h3>
+            <p>Specialist in Luxury Properties</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Anna Kahn Team. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
